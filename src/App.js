@@ -27,6 +27,7 @@ export default function App() {
     <main>
       <h1>Project 7: BMI CALCULATOR</h1>
       <div className="input-section">
+    <a href="www.google.com">google</a>
         <p class="slider-output">Weight: {weight} kg</p>
         <input
           className="input-slider"
