@@ -19,9 +19,8 @@ jobs:
 
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-          base_branch: gh-pages
-          branch: master
+          ssh-key: ${{ secrets.TOKEN }}
+          branch: gh-pages
           folder: build  
           
       
