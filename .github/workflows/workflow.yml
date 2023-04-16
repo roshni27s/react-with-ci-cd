@@ -6,7 +6,7 @@ on:
       - "master"
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,8 +17,7 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
 
-  deploy:
-        uses: JamesIves/github-pages-deploy-action@4.4.1
+      - uses: JamesIves/github-pages-deploy-action@4.4.1
         with:
           deploy_key: ${{ secrets.PUBLIC_ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build  
