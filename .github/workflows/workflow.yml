@@ -18,7 +18,7 @@ jobs:
       - run: npm test
 
   deploy:
-      - uses: JamesIves/github-pages-deploy-action@4.4.1
+        uses: JamesIves/github-pages-deploy-action@4.4.1
         with:
           deploy_key: ${{ secrets.PUBLIC_ACTIONS_DEPLOY_KEY }}
           publish_dir: ./build  
