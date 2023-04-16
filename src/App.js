@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <h1>ci cd pipeline with github actions</h1>
+          <h1>ci cd  with github actions</h1>
         </p>
         <a
           className="App-link"
