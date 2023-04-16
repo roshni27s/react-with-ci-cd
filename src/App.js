@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import "./styles.css";
+
 
 const DEFAULT_WEIGHT = 50;
 const DEFAULT_HEIGHT = 150;
