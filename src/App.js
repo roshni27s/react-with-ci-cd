@@ -9,7 +9,7 @@ import { useBudgets } from "./contexts/BudgetsContext";
 
 function App() {
   const [showAddBudgetModal, setShowAddBudgetModal] = useState(false)
-  const { budgets, getBudgetExpenses } = useBudgets()
+  const { budgets, getBudgetExpenses } = useBudgets() 
   return (
     <>
   <Container className="my-4">
@@ -27,7 +27,7 @@ function App() {
         return (
         <BudgetCard 
         key={budget.id}
-        name={budget.name}
+        name={budget.name.name}
         amount={amount} 
         max={budget.max}/>
         )
