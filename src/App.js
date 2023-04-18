@@ -27,7 +27,7 @@ function App() {
         return (
         <BudgetCard 
         key={budget.id}
-        name={budget.name.name}
+        name={budget.name}
         amount={amount} 
         max={budget.max}/>
         )
